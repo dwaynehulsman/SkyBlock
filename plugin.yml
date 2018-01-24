@@ -1,5 +1,5 @@
 name: SkyBlock
-version: 1.5.6
+version: 3.0.0-ALPHA10
 api: [1.12.0]
 main: SkyBlock\Main
 commands:
