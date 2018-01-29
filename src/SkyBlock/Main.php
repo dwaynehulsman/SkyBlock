@@ -388,7 +388,7 @@ class Main extends Base implements Listener{
 			Tree::growTree($levelName, $randX+6, $Y+1, $randZ+6, new Random(mt_rand()), Sapling::OAK);
 			
 			// Teleport the player to their new island
-			$player->teleport(new Position($randX, $Y+5, $randZ, $this->getServer()->getLevelByName($levelName)));
+			$player->teleport(new Position($randX, $Y+5, $randZ, $this->getServer()->getLevelByName($levelName->getName())));
 			$player->sendMessage(TextFormat::GREEN . "Welcome to your new island");
 			$player->sendMessage(TextFormat::GREEN . "If your island didn't spawn,");
 			$player->sendMessage(TextFormat::GREEN . "Use /is delete");
