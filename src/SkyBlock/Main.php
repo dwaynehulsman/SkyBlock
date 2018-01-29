@@ -46,7 +46,7 @@ class Main extends Base implements Listener{
 		$this->getLogger()->info(TextFormat::RED . "SkyBlock disabled");
 	}
 	
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
 		if(strtolower($command->getName()) == "is"){
 			if(!(isset($args[0]))){
 				$sender->sendMessage(TextFormat::YELLOW . "You didn't add a subcommand");
