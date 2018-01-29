@@ -49,8 +49,12 @@ class Main extends Base implements Listener{
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
 		if(strtolower($command->getName()) == "is"){
 			if(!(isset($args[0]))){
-				$sender->sendMessage(TextFormat::YELLOW . "You didn't add a subcommand");
-				$sender->sendMessage(TextFormat::GREEN . "Use: " . TextFormat::RESET . "/is help");
+                $sender->sendMessage(TextFormat::GREEN . "Showing help page 1 of 1");
+                $sender->sendMessage(TextFormat::GREEN . "/is help");
+                $sender->sendMessage(TextFormat::GREEN . "/is create");
+                $sender->sendMessage(TextFormat::GREEN . "/is home");
+                $sender->sendMessage(TextFormat::GREEN . "/is sethome");
+                $sender->sendMessage(TextFormat::GREEN . "/is find (op only)");
 				return true;
 			}elseif(isset($args[0])){
 				if($args[0] == "help"){
