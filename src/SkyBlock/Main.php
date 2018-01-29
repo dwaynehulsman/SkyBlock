@@ -26,6 +26,10 @@ use pocketmine\tile\Chest;
 use pocketmine\block\Sapling;
 use pocketmine\utils\Random;
 
+/**
+ * Class Main
+ * @package SkyBlock
+ */
 class Main extends Base implements Listener{
 	public function onEnable(){
 		$this->saveDefaultConfig();
